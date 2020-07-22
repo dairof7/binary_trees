@@ -44,7 +44,7 @@ const binary_tree_t *second)
 		return (NULL);
 	while (first != second)
 	{
-		if (first->parent == NULL || second->parent == NULL)
+		if (first == NULL || second == NULL)
 			return (NULL);
 		first = first->parent;
 		second = second->parent;
