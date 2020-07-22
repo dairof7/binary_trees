@@ -38,7 +38,7 @@ const binary_tree_t *second)
 
 	for (; first_depth < second_depth; second_depth--)
 		second = second->parent;
-	for (; second_depth > first_depth; first_depth--)
+	for (; second_depth < first_depth; first_depth--)
 		first = first->parent;
 	if (first == NULL || second == NULL)
 		return (NULL);
